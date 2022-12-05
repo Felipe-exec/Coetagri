@@ -5,12 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="./assets/images/Coetagri simbolo.png">
+
   <link rel="stylesheet" href="./CSS/bootstrap.css">
   <link rel="stylesheet" href="./CSS/style.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="./JS/bootstrap.min.js"></script>
   <script src="./JS/scroll.js"></script>
+
   <title>COETAGRI</title>
 </head>
 
@@ -20,10 +25,10 @@
   <header>
     <nav class="navbar navbar-default navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-left" href="#"><img class="img-responsive" src="./assets/images/coetagri.png" alt="COETAGRI"
-            width="250px"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-left" href="#">
+          <img class="img-responsive" src="./assets/images/coetagri.png" alt="COETAGRI" width="250px"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,7 +43,7 @@
               <a class="nav-link" href="#produtos">Mercadorias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contato">Comunicação</a>
+              <a class="nav-link" href="#contato-inicio">Comunicação</a>
             </li>
           </ul>
         </div>
@@ -48,18 +53,17 @@
   <!-- FIM CABEÇALHO -->
 
   <main>
-    <div class="carousel-inner">
-    <video autoplay="autoplay" loop="loop" controls muted>
-      <source src="./assets/video/Timeline 1.mov" type="video/mp4" content="width=device-width, initial-scale=1.0">
-    </video>
-    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
-      <div class="carousel-indicators">
-        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions"
-          type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1"
-          data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3"
-          data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
-      </div>
-      
+    <div id="inicio" class="carousel-inner">
+      <video autoplay="autoplay" loop="loop" controls muted>
+        <source src="./assets/video/Timeline 1.mov" type="video/mp4">
+      </video>
+      <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+        <div class="carousel-indicators">
+          <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button>
+          <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button>
+          <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
+        </div>
+        
         <div class="carousel-item active">
           <div class="carousel-caption">
             <img src="./assets/images/pacote-de-comida.png" alt="">
@@ -81,34 +85,30 @@
             <p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">A nossa equipe é totalmente focada e comprometida na hora do manuseio e cultivo dos alimentos, sempre buscando o melhor do que a terra tem a oferecer!</p>
           </div>
         </div>
-      </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
-        type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span
-          class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next"
-        data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true"
-          class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+      </div>
+
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span></button>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- SOBRE -->
     <section id="sobre" class="sobre section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-12 col-12">
+          <div class="col-md-5">
             <div class="sobre-img">
               <img src="./assets/images/Coetagri-Imagem-Principal.jpeg" alt="" class="img-fluid">
             </div>
           </div>
-          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="col-md-7">
             <div class="sobretexto">
               <h2>Quem somos?</h2>
-              <p>Somos a maior cooperativa-escola da região de Machado. Conheça-nos melhor visitando-nos ou acessando
-                nossas redes sociais. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nisi fuga
-                culpa consequuntur numquam itaque architecto vero hic laborum et ipsam aspernatur dolore dolorem nemo
-                qui blanditiis natus, voluptas iusto.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro ducimus natus minima dolores
-                eveniet dolor doloribus reprehenderit. Eligendi distinctio delectus commodi earum in maiores nesciunt
-                sint minima porro vel! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quisquam laudantium,
-                perferendis dolorem debitis sunt eum culpa quas recusandae quo quis ratione repellat facere modi,
-                deserunt ea quasi laborum officiis.</p>
+              <p>Somos a COETAGRI, uma Cooperativa-Escola dos alunos do Instituto Federal de Machado. Comercializamos diversos produtos produzidos no <i>Campus</i> e visamos prestar um serviço com excelência, tanto para o público interno quanto ao público externo ao <strong>IF Sul de Minas, em Machado.</strong></p>
             </div>
           </div>
         </div>
@@ -167,9 +167,9 @@
     <!-- FIM PRODUTOS -->
 
     <div>
-      <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep" viewBox="0 0 1600 200"
+      <svg id="contato-inicio" preserveAspectRatio="xMidYMax meet" class="svg-separator sep" viewBox="0 0 1600 200"
         style="display: block;" data-height="200">
-        <path class="" style="opacity: 1;fill: #003817;" d="M1615.6,58.4c-8.6,20.7-19.2,31.4-26.8,36.8c-4.4-7.6-8.7-18.4-10.9-33.4
+        <path class="" style="opacity: 1;fill: var(--dark-green);" d="M1615.6,58.4c-8.6,20.7-19.2,31.4-26.8,36.8c-4.4-7.6-8.7-18.4-10.9-33.4
     c-9.2,22.6-20.9,33.4-28.6,38.3c-2.4-7.7-4.4-16.4-6-26.2c-10.4,25.9-22.8,42.1-33.4,52.2c-2.8-6.5-5.2-14.5-6.8-24.4
     c-5.2,13.2-11.2,22.4-16.8,28.8c-3.9-5.1-8.1-12.1-11.9-21.5c6.8,0.7,13.6,1.4,20.4,2.1c0,0-20-9.9-26.6-49.3
     c-4.6,12-10,20.7-15.2,27c-8.1-12.1-16.5-30.2-21.1-56.8c-15.1,39.7-35.4,57-47.2,64.2c-3.8-7.1-7.4-16.7-9.7-29.2
@@ -192,29 +192,29 @@
     c-2.2,14.5-5.6,26.5-9.5,36.4c-7.5-5.7-17.5-16.3-25.7-36.3C9.3,90.4,7.8,96.6,6,101.9c-10.5-10-22.5-25.7-32.8-50.4
     c-0.4,2.5-0.7,4.9-1.2,7.2c7.3,57.9,10.2,77.5,17.5,135.4l1619.5-1.6c6.2-49.3,7.4-58.7,13.6-108
     C1619.7,77.7,1617.1,69.1,1615.6,58.4z"></path>
-        <path class="" style="opacity: 1;fill: #026842;" d="M85.8,155c5.1-0.6,10.1-1.1,15.2-1.7c0,0-13.6-3.6-27.3-24c5.9-0.7,11.7-1.3,17.6-1.9
+        <path class="" style="opacity: 1;fill: var(--medium-green);" d="M85.8,155c5.1-0.6,10.1-1.1,15.2-1.7c0,0-13.6-3.6-27.3-24c5.9-0.7,11.7-1.3,17.6-1.9
     c0,0-18.8-4.7-31.6-37c-5.3,34.4-22.6,43.1-22.6,43.1c5.9-0.7,11.7-1.4,17.6-2C46,154.4,33.5,161,33.5,161
     c5.1-0.6,10.1-1.2,15.2-1.8c-11.7,23-25.4,30-25.5,30l94.1-10.6C117.3,178.6,102.4,174.9,85.8,155z"></path>
-        <path class="" style="opacity: 1;fill: #026842;" d="M367.5,131.9c4.7-0.3,9.5-0.6,14.2-0.9c0,0-12.6-3.9-24.5-23.6c5.5-0.4,11-0.7,16.5-1.1
+        <path class="" style="opacity: 1;fill: var(--medium-green);" d="M367.5,131.9c4.7-0.3,9.5-0.6,14.2-0.9c0,0-12.6-3.9-24.5-23.6c5.5-0.4,11-0.7,16.5-1.1
     c0,0-17.3-5.1-28-35.9c-6.3,32-22.8,39.4-22.8,39.4c5.5-0.4,11-0.8,16.5-1.2c-9.1,21.1-21,26.7-21,26.7c4.7-0.4,9.5-0.7,14.2-1
     c-11.9,21.1-25,27.1-25,27.1l88.3-6.1C396,155.3,382.2,151.1,367.5,131.9z"></path>
-        <path class="" style="opacity: 1;fill: #026842;" d="M714.6,108.9c6.5-0.1,13-0.2,19.5-0.2c0,0-16.8-6.3-31.7-33.9c7.5-0.1,15.1-0.2,22.6-0.3
+        <path class="" style="opacity: 1;fill: var(--medium-green);" d="M714.6,108.9c6.5-0.1,13-0.2,19.5-0.2c0,0-16.8-6.3-31.7-33.9c7.5-0.1,15.1-0.2,22.6-0.3
     c0,0-23.3-8.2-35.7-50.9c-11,43.1-33.9,52.1-33.9,52.1c7.5-0.2,15.1-0.3,22.6-0.5c-13.9,28.1-30.5,34.9-30.5,34.9
     c6.5-0.2,13-0.3,19.5-0.4c-17.7,27.9-35.9,35.1-35.9,35.1l120.6-2.1C751.7,142.8,733.3,136.1,714.6,108.9z"></path>
-        <path class="" style="opacity: 1;fill: #026842;" d="M997.7,115.2c5.7,0.2,11.5,0.3,17.2,0.5c0,0-14.6-6.2-26.7-31.1c6.7,0.2,13.3,0.4,20,0.6
+        <path class="" style="opacity: 1;fill: var(--medium-green);" d="M997.7,115.2c5.7,0.2,11.5,0.3,17.2,0.5c0,0-14.6-6.2-26.7-31.1c6.7,0.2,13.3,0.4,20,0.6
     c0,0-20.2-8.2-29.5-46.3c-11.3,37.6-31.9,44.7-31.9,44.7c6.7,0.1,13.3,0.3,20,0.5c-13.4,24.3-28.3,29.6-28.3,29.7
     c5.7,0.1,11.5,0.2,17.2,0.4c-16.7,23.9-33,29.6-33,29.6l106.5,2.8C1029.2,146.5,1013.1,139.9,997.7,115.2z"></path>
-        <path class="" style="opacity: 1;fill: #026842;" d="M1224.6,124.7c5.9,0.4,11.9,0.8,17.8,1.2c0,0-15-6.9-26.6-33.2c6.9,0.4,13.8,0.9,20.7,1.3
+        <path class="" style="opacity: 1;fill: var(--medium-green);" d="M1224.6,124.7c5.9,0.4,11.9,0.8,17.8,1.2c0,0-15-6.9-26.6-33.2c6.9,0.4,13.8,0.9,20.7,1.3
     c0,0-20.7-9.2-29-49.1c-13.1,38.6-34.7,45.2-34.7,45.2c6.9,0.4,13.8,0.8,20.7,1.2c-14.7,24.7-30.4,29.7-30.4,29.7
     c5.9,0.3,11.9,0.7,17.8,1c-18.1,24.2-35.3,29.5-35.3,29.5l110.4,6.7C1256.1,158.3,1239.7,150.9,1224.6,124.7z"></path>
-        <path class="" style="opacity: 1;fill: #026842;" d="M1357.2,144.3c4.1,0.3,8.2,0.7,12.3,1.1c0,0-10.2-5-17.9-23.3c4.8,0.4,9.5,0.8,14.3,1.2
+        <path class="" style="opacity: 1;fill: var(--medium-green);" d="M1357.2,144.3c4.1,0.3,8.2,0.7,12.3,1.1c0,0-10.2-5-17.9-23.3c4.8,0.4,9.5,0.8,14.3,1.2
     c0,0-14.1-6.6-19.2-34.3c-9.6,26.5-24.6,30.7-24.6,30.7c4.8,0.4,9.5,0.8,14.3,1.1c-10.5,16.8-21.4,20.1-21.4,20.1
     c4.1,0.3,8.2,0.6,12.3,1c-12.9,16.4-24.9,19.8-24.9,19.8l76.2,6.3C1378.5,168,1367.2,162.7,1357.2,144.3z"></path>
-        <path class="" style="opacity: 1;fill: #026842;"
+        <path class="" style="opacity: 1;fill: var(--medium-green);"
           d="M1593.7,159.5c5.8,0.7,11.6,1.4,17.4,2.1c0,0-14.3-7.6-24.2-34c6.8,0.8,13.5,1.6,20.3,2.5
     c0,0-19.8-10.2-25.7-49.7c-15,37.1-36.6,42.4-36.6,42.4c6.8,0.8,13.5,1.5,20.3,2.3c-15.8,23.4-31.5,27.5-31.5,27.5
     c5.8,0.7,11.6,1.3,17.4,2c-19.1,22.7-36.3,27-36.3,27l104,12.2c1.3,0.2,2.7,0.3,4,0.5C1622.7,194.2,1607,186,1593.7,159.5z"></path>
-        <path class="" style="fill: #008339;" d="M1475.4,177c0,0-16.4-8.1-30.8-35.3c6,0.6,12.1,1.2,18.1,1.8
+        <path class="" style="fill: var(--weak-green);" d="M1475.4,177c0,0-16.4-8.1-30.8-35.3c6,0.6,12.1,1.2,18.1,1.8
     c0,0-15-7.6-25.8-34.8c7,0.7,14,1.4,21,2.1c0,0-20.7-10.1-27.7-51c-14.7,38.8-36.9,44.7-37,44.7c7,0.6,14,1.3,21,2
     c-15.9,24.6-32,29.2-32,29.2c6,0.5,12.1,1.1,18.1,1.7c-19.3,24-37,28.8-37,28.8c-10.7-0.9-21.3-1.9-32-2.7c0,0-18.1-8.4-34.4-37.7
     c6.6,0.5,13.2,1,19.7,1.6c0,0-16.5-7.9-29-37.2c7.6,0.6,15.3,1.2,22.9,1.8c0,0-22.8-10.5-31.5-54.8c-15,42.6-39.1,49.6-39.1,49.7
@@ -272,11 +272,39 @@
     <!-- FIM DO CONTATO -->
   </main>
 
-  <!-- footer -->
-  <footer>
-    
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476.41427379671677!2d-45.890896820317884!3d-21.70097019285501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14f633880830c672!2zMjHCsDQyJzAzLjUiUyA0NcKwNTMnMjYuNyJX!5e1!3m2!1spt-BR!2sbr!4v1670023086063!5m2!1spt-BR!2sbr"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about">
+            <img src="./assets/images/coetagri.png" alt="" class="img-fluid">
+            <p>Somos a maior cooperativa-escola da região de Machado. Conheça-nos melhor visitando-nos ou acessando nossas redes sociais.</p>
+            <div class="address-links">
+              <li><i class="fa fa-map-marker"></i> Rod. Machado - Paraguaçu, km 3 - Guaipava, Machado - MG</li>
+              <li><i class="fa fa-phone"></i> (35) 3295-9716</li>
+            </div>
+          </div>
+          <div class="socials">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-  </footer>
+  <section id="copy-right">
+    <div class="copy-right-sec"><i class="fa fa-copyright"></i>  
+        Copyright <i class="fa fa-copyright"></i> 2022. Todos os direitos reservados. <a href="#">COETAGRI.</a>
+    </div>
+  </section>
+  <!-- FIM DO FOOTER -->
 </body>
-
 </html>
