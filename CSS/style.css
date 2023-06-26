@@ -554,7 +554,7 @@ video {
 
 /* FOOTER */
 #footer {
-  background-color: var(--white-smoke);
+  background-color: var(--dark-brown);
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -578,13 +578,13 @@ video {
 .about p {
   font-size: 32px;
   margin-top: 3rem;
-  color: var(--black);
+  color: var(--weak-yellow);
 }
 
 .address-links {
   font-size: 20px;
   margin-top: 3rem;
-  color: var(--black);
+  color: var(--medium-yellow);
 }
 
 .address-links li {
@@ -632,7 +632,7 @@ video {
 
 .copy-right-sec {
   padding: 1.8rem;
-  background: var(--black);
+  background: var(--dark-green);
   color: #fff;
   text-align: center;
 }
