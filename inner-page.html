@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -10,11 +9,11 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/img/favicon.ico" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -36,43 +35,21 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Dewi</a></h1>
+      <a href="./index.html" class="logo"><img src="./assets/img/coetagri.png" alt="Logo da COETAGRI" class="img-fluid"></a>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto" href="./index.html">Início</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Produtos</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Contato</a></li>
+          <li><a class="getstarted scrollto" href="#about" id="view-cart">Carrinho</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -87,23 +64,140 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>LOJA</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li><a href="index.html">Início</a></li>
+            <li>Loja</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Produtos</h2>
+          <p>Bem-vindo a nossa loja!</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-meat">Carnes</li>
+              <li data-filter=".filter-dairy">Laticínios</li>
+              <li data-filter=".filter-coffe">Cafés</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-meat">
+            <img src="assets/img/portfolio/meat/Defumados.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Carne defumada</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/meat/Defumados.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Carne defumada">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-coffe">
+            <img src="assets/img/portfolio/coffe/torrado.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Café torrado e moído</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/coffe/torrado.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Café torrado">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-meat">
+            <img src="assets/img/portfolio/meat/Lombo suíno.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Lombo suíno</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/meat/Lombo suíno.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Lombo suíno">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-coffe">
+            <img src="assets/img/portfolio/coffe/expresso.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Café expresso</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/coffe/expresso.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Café expresso">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dairy">
+            <img src="assets/img/portfolio/dairy/Queijo Minas.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Queijo minas</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/dairy/Queijo Minas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Queijo minas">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dairy">
+            <img src="assets/img/portfolio/dairy/iogurtes.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Iogurtes</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/dairy/iogurtes.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Iogurtes">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-coffe">
+            <img src="assets/img/portfolio/coffe/Café em grão.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Café em grão</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/coffe/Café em grão.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Café em grão">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dairy">
+            <img src="assets/img/portfolio/dairy/Queijo Prato.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Queijo prato</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/dairy/Queijo Prato.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Queijo prato">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-meat">
+            <img src="assets/img/portfolio/meat/Toucinho.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Toucinho</h4>
+              <p>em estoque</p>
+              <a href="assets/img/portfolio/meat/Toucinho.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link"><i class="bi bi-search"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <button class="btn btn-primary add-to-cart" data-product="Toucinho">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </section>
+    </section><!-- End Portfolio Section -->
 
   </main><!-- End #main -->
 
@@ -115,51 +209,39 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Dewi</h3>
+              <h3>Informações úteis</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                Rod. Machado - Paraguaçu<br>
+                km 3 - Guaipava, Machado - MG<br><br>
+                <strong>Telefone:</strong> +55 (35)3295-9716<br>
+                <strong>E-mail:</strong> coetagri@mch.ifsuldeminas.edu.br<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a target="blank" href="https://www.facebook.com/Coetagri/" class="facebook"><i
+                    class="bx bxl-facebook"></i></a>
+                <a target="blank" href="https://www.instagram.com/coetagri/" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Úteis</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://linktr.ee/coetagri.machado">Linktree</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Redirecionamentos</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Início</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <h4>Obrigado por nos visitar!</h4>
+            <img src="./assets/img/coetagri.png" width="50%" alt="" srcset="">
 
           </div>
 
@@ -195,7 +277,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Cart Popup -->
+  <div id="cart-popup" style="display:none; position:fixed; top:20%; left:30%; width:40%; background:white; border:1px solid #ccc; padding:20px; z-index:1000;">
+    <h4>Itens no Carrinho</h4>
+    <div id="cart-items"></div>
+    <button class="btn btn-secondary" id="close-cart-popup">Fechar</button>
+    <button class="btn btn-success" id="comprar">Comprar</button>
+  </div>
 
+    <!-- Carrinho Script -->
+    <script src="./assets/js/chart.js"></script>
 </body>
-
 </html>
