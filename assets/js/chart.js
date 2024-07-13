@@ -15,7 +15,14 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 
 document.getElementById('view-cart').addEventListener('click', () => {
   if (carrinho.length > 0) {
-    let lista = carrinho.map(item => `<li>${item.nome} - Quantidade: <input type="number" value="${item.quantidade}" min="1" data-product="${item.nome}" class="quantity-input"> <button class="btn btn-danger btn-sm remove-from-cart" data-product="${item.nome}">Remover</button></li>`).join('');
+    let lista = carrinho.map(item => `
+    <li>
+        ${item.nome} - Quantidade: <br>
+        <input type="number" value="${item.quantidade}" min="1" data-product="${item.nome}" style="width: 60px;" class="quantity-input"> 
+        <button class="btn btn-danger btn-sm remove-from-cart" data-product="${item.nome}">Remover</button>
+    </li>
+`).join('');
+
     document.getElementById('cart-items').innerHTML = `<ul>${lista}</ul>`;
     document.getElementById('cart-popup').style.display = 'block';
 

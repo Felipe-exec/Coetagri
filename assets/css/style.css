@@ -1192,6 +1192,31 @@ section {
   bottom: 0;
 }
 
+#cart-popup {
+  display: none;
+  position: fixed;
+  top: 8%;
+  right: 0%;
+  width: 350px;
+  height: 100%;
+  background: rgb(21, 34, 43);
+  padding: 20px;
+  z-index: 1000;
+  color: white;
+}
+
+.cart-icon:hover .bi-cart2 {
+  display: none;
+}
+
+.cart-icon:hover .bi-cart-plus {
+  display: inline;
+}
+
+.bi-cart-plus {
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
